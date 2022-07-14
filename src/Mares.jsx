@@ -9,7 +9,7 @@ export const Mares_inicio =()=>{
 return (
 <>
     <div class='row'>
-        <div class='container mt-3 my-3'>
+        <div>
             <button>
                 X-C
             </button>
@@ -42,24 +42,35 @@ return (
 export const Menu_dinamico = ()=> {
 return (
 <>
-    <Navbar bg="dark" variant="dark">
+<Navbar bg="dark" variant="dark">
         <Container>
-            <Navbar.Brand href="#home">Liverpool </Navbar.Brand>
-            <Nav className="me-auto">
-                <Nav.Link href="#home">Inicio</Nav.Link>
-                <Nav.Link href="#features">Contacto</Nav.Link>
-                <Nav.Link href="#pricing">Sucursales</Nav.Link>
-            </Nav>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src="./liverpool.ico"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+          Liverpool
+          </Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
         </Container>
-    </Navbar>
+      </Navbar>
 
 </>
 );
 
 }
-export const tablas_dinamicas = () =>{
-            const  Tabla_productos = (id) => {
-                Ropa.find( clother => clother.identificación == id);
-            }  
-    const getHeroesByOwner = (tall) => tallas.filter( talla => talla.dueño ==  Owner );
+export const tablas_dinamicas = (Ropa) =>{
+    for (let index = 0; index < Ropa.length; index++) {
+        const element = array[index];
+        console.log(index.nombre)
+     
+    }
+   
 }
