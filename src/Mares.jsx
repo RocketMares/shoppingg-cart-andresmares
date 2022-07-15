@@ -8,25 +8,25 @@ export const Mares_inicio =()=>{
    
 return (
 <>
-    <div class='row'>
+    <div className='row mt-4 my-4' >
         <div>
-            <button>
+            <button onClick={alert('hola')}>
                 X-C
             </button>
-            <button>
+            <button onClick={alert('hola')}>
                 C
             </button>
-            <button>
+            <button onClick={alert('hola')}>
                 M
-            </button>
+            </button >
             <br />
-            <button>
+            <button onClick={alert('hola')}>
                 G
             </button>
-            <button>
+            <button onClick={alert('hola')}>
                 XL
             </button>
-            <button>
+            <button onClick={alert('hola')}>
                 XXL
             </button>
         </div>
@@ -42,7 +42,7 @@ return (
 export const Menu_dinamico = ()=> {
 return (
 <>
-<Navbar bg="dark" variant="dark">
+<Navbar bg="dark" variant="dark" >
         <Container>
           <Navbar.Brand href="#home">
             <img
