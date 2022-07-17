@@ -3,7 +3,7 @@
 html,body{
     background-color: #e00981;
     color: white;
-     font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif; 
     font-size: 1.3rem;
     /* padding: 70px; */
 }
@@ -43,5 +43,15 @@ button {
    
    button:hover {
     color: rgb(255, 242, 242);
+    
    }
+
+   .btn-circle.btn-xl {
+        width: 100px;
+        height: 100px;
+        padding: 13px 18px;
+        border-radius: 60px;
+        font-size: 15px;
+        text-align: center;
+    }
    

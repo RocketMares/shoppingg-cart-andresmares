@@ -1,8 +1,10 @@
 import React from "react";
 import  ReactDOM  from "react-dom/client";
 
-import {Mares_inicio,Menu_dinamico,tablas_dinamicas}  from "./Mares";
-
+import {Mares_inicio}  from "./Mares";
+import {CaruselBanner}  from "./Banner";
+import {Menu_dinamico}  from "./Navbar";
+import {Tablas}  from "./tablas";
 import './mares.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,14 +15,20 @@ ReactDOM.createRoot(document.getElementById('Menu_din')).render(
     </React.StrictMode>
 );
 
+ReactDOM.createRoot(document.getElementById('CaruselBanner')).render(
+    <React.StrictMode>
+       <CaruselBanner /> 
+    </React.StrictMode>
+);
+
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
        <Mares_inicio /> 
     </React.StrictMode>
 );
-ReactDOM.createRoot(document.getElementById('Menu_tallas')).render(
+ReactDOM.createRoot(document.getElementById('tablas')).render(
     <React.StrictMode>
-       <tablas_dinamicas /> 
+       <Tablas /> 
     </React.StrictMode>
 );
 
