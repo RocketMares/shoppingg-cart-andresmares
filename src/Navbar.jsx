@@ -8,7 +8,7 @@ export const Menu_dinamico = ()=> {
     
     return (
     <>
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
+        <Navbar collapseOnSelect expand="lg"  variant="light" fixed="top">
           <Container>
             <Navbar.Brand href="#CaruselBanner">
                 <img

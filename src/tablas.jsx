@@ -9,7 +9,7 @@ import { Ropa,tallas } from './productos';
 export const Tablas = () =>{
     
     return (
-        <div className='row'>
+        <div className='row' >
 
             {
             Ropa.map((rope)=>{
@@ -17,29 +17,30 @@ export const Tablas = () =>{
               
                 return (
                     <>
-                    <Card style={{ width: '18rem' ,height:'18rem'}} className="mt-3 my-3">
-                        <Card.Img variant="top" src={rope.Image} style={{ width: '120px' ,height:'120px'}}/>
+                    <div className='col-sm-3'>
+                    <Card style={{ width: '25rem' ,height:'25rem'}} className="mt-3 my-3">
+                        <Card.Img variant="top" src={rope.Image} className='justify-content-center' style={{ width: '120px' ,height:'120px'}}/>
                         <Card.Body>
                             <Card.Title>{rope.nombre}</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                       
+                                                  
                             <Card.Text>
                             Precio: $ {rope.precio} con descuento
                             </Card.Text>
                             <Card.Text>
                             Descuento: ${rope.descuento * rope.precio}
                             </Card.Text>
-                            <div className='text-center'>
-                            <Button variant="warning" className='text-white' ><i className='fas fa-icon'></i></Button>
-
-                            <Button variant="primary">Comprar</Button>
-                            </div>
                             
-                        </Card.Body>
+                            <Button >Agregar al carrito</Button>
+
+                            <Button>Comprar</Button>
+                           
+                            
+                        </Card.Body>    
                         </Card>
+                    </div>
+                   
+                   
+                   
                     </>
                 )
             })
